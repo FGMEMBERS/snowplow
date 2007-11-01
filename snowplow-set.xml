@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+
+ <sim>
+
+  <description>Snow Plow</description>
+  <author>Detlef Faber</author>
+  <status>alpha</status>
+  <flight-model>yasim</flight-model>
+  <aero>snowplow-yasim</aero>
+
+
+  <virtual-cockpit archive="y">true</virtual-cockpit>
+  <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+
+  <startup>
+    <splash-texture>Aircraft/snowplow/snowplow-splash.rgb</splash-texture>
+  </startup>
+   
+  <sound>
+   <!-- <path>Aircraft/Generic/generic-sound.xml</path> -->
+   <path>Aircraft/snowplow/snowplow-sound.xml</path>
+  </sound>
+
+  <model>
+   <path>Aircraft/snowplow/Models/Snowplow.xml</path>
+   <crew>
+     <pilot>
+       <visible type="int">1</visible>
+     </pilot>
+   </crew>
+  </model> 
+
+  <view n="0">
+   <internal archive="y">true</internal>
+   <config>
+    <x-offset-m archive="y" type="double">-0.45</x-offset-m>
+    <y-offset-m archive="y" type="double">1.1</y-offset-m>
+    <z-offset-m archive="y" type="double">2.1</z-offset-m>
+    <pitch-offset-deg>-15.0</pitch-offset-deg>
+   </config>
+  </view>
+
+  <view n="1">
+   <config>
+    <target-z-offset-m archive="y" type="double">3.2</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="2">
+   <config>
+    <target-z-offset-m archive="y" type="double">3.2</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="3">
+   <config>
+    <target-z-offset-m archive="y" type="double">3.26</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="4">
+   <config>
+    <target-z-offset-m archive="y" type="double">3.2</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="5">
+   <config>
+    <target-z-offset-m archive="y" type="double">3.2</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="6">
+   <config>
+    <target-z-offset-m archive="y" type="double">3.2</target-z-offset-m>
+   </config>
+  </view>
+
+  <hud>
+   <enable3d>false</enable3d>
+  </hud>
+
+  <help>
+    <key>
+      <name>,</name>
+      <desc>Brakes</desc>
+    </key>
+    <key>
+      <name>.</name>
+      <desc>Accelerator</desc>
+    </key>
+  </help>
+	<menubar>
+		<default>
+			<menu n="10">
+				<label>Extras</label>
+					<enabled type="bool">true</enabled>
+					<item>
+						<label>tilt Windscreen forward</label>
+						<binding>
+          <command>property-toggle</command>
+          <property>/controls/gear/screen</property>
+						</binding>
+					</item>
+					<item>
+						<label>put Softroof on</label>
+						<binding>
+          <command>property-toggle</command>
+          <property>/controls/gear/roof</property>
+						</binding>
+					</item>
+			</menu>
+		</default>
+	</menubar>
+ </sim>
+
+ <nasal>
+   <snowplow>
+     <file>Aircraft/snowplow/Nasal/truck.nas</file>
+   </snowplow>
+ </nasal>
+
+ <engines>
+  <engine>
+   <rpm type="double">700</rpm>
+  </engine>
+ </engines>
+ <controls>
+   <engines>
+      <engine n="0">
+        <magnetos>3</magnetos>
+      </engine>
+   </engines>
+	<gear>
+		<screen type="bool">false</screen>
+		<roof type="bool">false</roof>
+	</gear>
+ </controls>
+
+  <input>
+    <keyboard>
+      <key n="9">
+        <name>Ctrl-I</name>
+        <desc>Show configuration dialog</desc>
+        <binding>
+          <command>nasal</command>
+          <script>snowplow.dialog.toggle()</script>
+        </binding>
+      </key>
+
+      <key n="77"> 
+        <name>M</name>
+        <desc>engage Reverse</desc>
+        <binding> 
+          <command>property-assign</command>
+          <property>controls/engines/engine[0]/mixture</property>
+          <value type="double">0.0</value>
+        </binding>
+      </key>
+
+      <key n="109"> 
+        <name>m</name>
+        <desc>disengage Reverse</desc>
+        <binding> 
+          <command>property-assign</command>
+          <property>controls/engines/engine[0]/mixture</property>
+          <value type="double">1.0</value>
+        </binding>
+      </key>
+    </keyboard>
+  </input>
+
+</PropertyList>
+
+
+
+
