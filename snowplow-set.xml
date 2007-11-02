@@ -93,6 +93,7 @@
       <desc>Accelerator</desc>
     </key>
   </help>
+<!--
 	<menubar>
 		<default>
 			<menu n="10">
@@ -115,6 +116,7 @@
 			</menu>
 		</default>
 	</menubar>
+-->
  </sim>
 
  <nasal>

@@ -22,7 +22,7 @@ width="1.0" taper="0" midpoint="0.35"/>
 <wing x="-5.8" y="0.0" z="1.0" length="1.68" chord="1.0" camber="0">
     <stall aoa="16" width="4" peak="1.5"/>
 </wing>
-<mstab x="-4.85" y="0.237" z="0.61" length="1.8" chord="1.2" >
+<mstab x="-2.0" y="0.237" z="0.61" length="1.8" chord="1.2" >
 </mstab>
 
 <jet x="-5.8" y="0" z="-0.80"
@@ -37,25 +37,29 @@ width="1.0" taper="0" midpoint="0.35"/>
 
 <tank x="-1.8" y="1.3" z="-0.9" capacity="372"/>
 
-<gear x="-0.7" y="1.2" z="-1.0" compression="0.3">
+<gear x="-0.7" y="1.2" z="-1.0" compression="0.3"
+	sfric="1.9">
 <control-input axis="/controls/flight/aileron" control="STEER"  
  src0="-1.0" src1="1.0"
  dst0="-0.4" dst1="0.4"/>
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
 </gear>
-<gear x="-0.7" y="-1.2" z="-1.0" compression="0.3">
+<gear x="-0.7" y="-1.2" z="-1.0" compression="0.3"
+	sfric="1.9">
 <control-input axis="/controls/flight/aileron" control="STEER"  
  src0="-1.0" src1="1.0"
  dst0="-0.4" dst1="0.4"/>
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
 </gear>
 
-<gear x="-5.2" y="1.2" z="-1.0" compression="0.3">
+<gear x="-5.2" y="1.2" z="-1.0" compression="0.3"
+	sfric="1.9">
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
 </gear>
 
-<gear x="-5.2" y="-1.2" z="-1.0" compression="0.3">
+<gear x="-5.2" y="-1.2" z="-1.0" compression="0.3"
+	sfric="1.9">
   <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
   <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
 </gear>
