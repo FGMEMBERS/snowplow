@@ -117,30 +117,42 @@
 		</default>
 	</menubar>
 -->
- </sim>
+  </sim>
 
- <nasal>
-   <snowplow>
-     <file>Aircraft/snowplow/Nasal/truck.nas</file>
-   </snowplow>
- </nasal>
+  <nasal>
+    <snowplow>
+      <file>Aircraft/snowplow/Nasal/radar.nas</file>
+      <file>Aircraft/snowplow/Nasal/speed.nas</file>
+      <file>Aircraft/snowplow/Nasal/curtsteer.nas</file>
+      <file>Aircraft/snowplow/Nasal/curtroutemgr.nas</file>
+      <file>Aircraft/snowplow/Nasal/truck.nas</file>
+    </snowplow>
+  </nasal>
 
- <engines>
-  <engine>
-   <rpm type="double">700</rpm>
-  </engine>
- </engines>
- <controls>
-   <engines>
+  <engines>
+    <engine>
+      <rpm type="double">700</rpm>
+    </engine>
+  </engines>
+
+  <controls>
+    <engines>
       <engine n="0">
         <magnetos>3</magnetos>
       </engine>
-   </engines>
-	<gear>
-		<screen type="bool">false</screen>
-		<roof type="bool">false</roof>
-	</gear>
- </controls>
+    </engines>
+    <gear>
+      <screen type="bool">false</screen>
+      <roof type="bool">false</roof>
+    </gear>
+  </controls>
+
+  <instrumentation>
+    <radar>
+      <range type="int" archive="y">1</range>
+      <minimized type="bool" archive="y">false</minimized>
+    </radar>
+  </instrumentation>
 
   <input>
     <keyboard>
@@ -174,6 +186,13 @@
       </key>
     </keyboard>
   </input>
+
+  <!-- load predefined routes -->
+  <routes>
+    <loadpoint include="Routes/KSFO-28R-loop.xml" omit-node="y"/>
+    <loadpoint include="Routes/KSFO-28R-loop.xml" omit-node="y"/>
+    <loadpoint include="Routes/KSFO-28R-loop.xml" omit-node="y"/>
+  </routes>
 
 </PropertyList>
 
