@@ -3,8 +3,8 @@
 <PropertyList>
   <name>snowplow-config</name>
   <layout>vbox</layout>
-  <x>-40</x>
-  <y>-40</y>
+  <x>40</x>
+  <y>40</y>
 
   <group>
     <layout>hbox</layout>
@@ -79,9 +79,9 @@
       <row>2</row> <col>0</col>
       <halign>right</halign>
       <label>Steering Servo Voltage:</label>
-
     </text>
 
+    <!--
     <slider>
       <row>2</row> <col>1</col>
       <property>/me5286/servo/steer/volts</property>
@@ -91,6 +91,7 @@
         <command>dialog-apply</command>
       </binding>
     </slider>
+    -->
 
     <text>
       <label>0123456789</label>
@@ -111,7 +112,59 @@
       <label>0123456789</label>
       <row>3</row> <col>2</col>
       <format>%.2f</format>
-      <property>/controls/flight/aileron</property>
+      <property>/me5286/servo/steer/angle-deg</property>
+      <live>true</live>
+    </text>
+
+    <!-- row four -->
+    <text>
+      <row>4</row> <col>0</col>
+      <halign>right</halign>
+      <label>Radar:</label>
+    </text>
+
+    <text>
+      <label>0123456789</label>
+      <row>4</row> <col>1</col>
+      <property>/me5286/radar/callsign</property>
+      <live>true</live>
+    </text>
+
+    <text>
+      <label>0123456789</label>
+      <row>4</row> <col>2</col>
+      <format>%.0f</format>
+      <property>/me5286/radar/dist_m</property>
+      <live>true</live>
+    </text>
+
+    <!-- row five -->
+    <text>
+      <row>5</row> <col>0</col>
+      <halign>right</halign>
+      <label>Accelerator:</label>
+    </text>
+
+    <text>
+      <label>0123456789</label>
+      <row>5</row> <col>2</col>
+      <format>%.2f</format>
+      <property>/controls/engines/engine/throttle</property>
+      <live>true</live>
+    </text>
+
+    <!-- row six -->
+    <text>
+      <row>6</row> <col>0</col>
+      <halign>right</halign>
+      <label>Brake:</label>
+    </text>
+
+    <text>
+      <label>0123456789</label>
+      <row>6</row> <col>2</col>
+      <format>%.2f</format>
+      <property>/controls/gear/brake-left</property>
       <live>true</live>
     </text>
 

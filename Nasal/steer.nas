@@ -11,7 +11,6 @@ var steerInit = func {
     # set initial values
     steer_angle_node.setDoubleValue(0.0);
     steer_volt_node.setDoubleValue(0.0);
-    heading.setDoubleValue(0.0);
 }
 
 

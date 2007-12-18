@@ -26,7 +26,7 @@ var speedUpdate = func {
 
     var alt_min_ts = ts;
     if ( radar_dist < 1.0 ) {
-        alt_min_ts = (radar_dist - 0.008) * 300;
+        alt_min_ts = (radar_dist - 0.020) * 550;
         if ( alt_min_ts < 0.0 ) { alt_min_ts = 0.0; }
     }
     if ( alt_min_ts < ts ) { ts = alt_min_ts; }
@@ -38,7 +38,7 @@ var speedUpdate = func {
     if ( throttle < 0.0 ) { throttle = 0.0; }
     throttle_node.setValue( throttle );
 
-    var brake = -error / 50.0;
+    var brake = -error / 25.0;
     if ( brake > 0.5 ) { brake = 0.5; }
     if ( brake < 0.0 ) { brake = 0.0; }
     left_brake_node.setValue( brake );
