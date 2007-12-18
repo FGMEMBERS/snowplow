@@ -8,6 +8,7 @@
   <description>Snow Plow</description>
   <author>Detlef Faber</author>
   <status>alpha</status>
+  <aircraft-version>1.0</aircraft-version>
   <flight-model>yasim</flight-model>
   <aero>snowplow-yasim</aero>
 
