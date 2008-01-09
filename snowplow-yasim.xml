@@ -1,6 +1,6 @@
 <airplane mass="12000">
 
-<approach speed="85" aoa="6" fuel="0.8">
+<approach speed="105" aoa="6" fuel="0.8">
   <control-setting axis="/controls/engines/engine[0]/throttle" value="0.25"/>
   <control-setting axis="/controls/engines/engine[1]/throttle" value="0.25"/>
   <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.0"/>
@@ -26,8 +26,8 @@ width="1.0" taper="0" midpoint="0.35"/>
 </mstab>
 
 <jet x="-5.8" y="0" z="-0.80"
-   n1-idle="30" n1-max="70" n2-idle="35" n2-max="75" exhaust-speed="50"
-   egt="850" tsfc="1.39" mass="400" thrust="2000" rotate="-180" >
+   n1-idle="30" n1-max="70" n2-idle="35" n2-max="75" exhaust-speed="120"
+   egt="850" tsfc="1.39" mass="400" thrust="4000" rotate="-180" >
   <actionpt x="-2.7" y="0" z="-0.8" />
   <control-input axis="/controls/gear/brake-right" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
