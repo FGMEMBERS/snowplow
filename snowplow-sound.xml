@@ -53,6 +53,17 @@
       </position>
     </engine>
     
+  <gear>
+   <name>dixie</name>
+   <mode>once</mode>
+   <condition>
+    <not>
+     <property>/gear/gear[0]/wow</property>
+    </not>
+   </condition>
+   <path>Aircraft/snowplow/Sounds/dixie.wav</path>
+  </gear>
+
     </fx>
 
 </PropertyList>
