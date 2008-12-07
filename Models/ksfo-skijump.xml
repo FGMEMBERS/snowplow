@@ -7,30 +7,30 @@
       <pitch-deg type="double">0</pitch-deg>
       <heading-deg type="double">28</heading-deg>
       <roll-deg type="double">0</roll-deg>
-      <path type="string">Models/fgfsdb/SkiJump.xml</path>
+      <path type="string">Models/Military/SkiJump.xml</path>
       <latitude-deg type="double">37.60899351</latitude-deg>
       <longitude-deg type="double">-122.377669</longitude-deg>
       <elevation-ft type="double">1.980673085</elevation-ft>
-      <absolute-path type="string">/home/curt/Projects/FlightGear/data/Models/fgfsdb/SkiJump.xml</absolute-path>
+      <absolute-path type="string">/home/curt/Projects/FlightGear/data/Models/Military/SkiJump.xml</absolute-path>
       <stg-path type="string">w130n30/w123n37/942050.stg</stg-path>
       <stg-heading-deg type="double">332</stg-heading-deg>
       <elevation-m type="double">0.6037091563</elevation-m>
-      <object-line type="string">OBJECT_SHARED Models/fgfsdb/SkiJump.xml -122.37766900 37.60899351 0.6037 332.0</object-line>
+      <object-line type="string">OBJECT_SHARED Models/Military/SkiJump.xml -122.37766900 37.60899351 0.6037 332.0</object-line>
     </model>
     <model n="1">
       <legend type="string"></legend>
       <pitch-deg type="double">0</pitch-deg>
       <heading-deg type="double">-156</heading-deg>
       <roll-deg type="double">0</roll-deg>
-      <path type="string">Models/fgfsdb/SkiJump.xml</path>
+      <path type="string">Models/Military/SkiJump.xml</path>
       <latitude-deg type="double">37.60953765</latitude-deg>
       <longitude-deg type="double">-122.3772956</longitude-deg>
       <elevation-ft type="double">2.127562575</elevation-ft>
-      <absolute-path type="string">/home/curt/Projects/FlightGear/data/Models/fgfsdb/SkiJump.xml</absolute-path>
+      <absolute-path type="string">/home/curt/Projects/FlightGear/data/Models/Military/SkiJump.xml</absolute-path>
       <stg-path type="string">w130n30/w123n37/942050.stg</stg-path>
       <stg-heading-deg type="double">156</stg-heading-deg>
       <elevation-m type="double">0.6484810729</elevation-m>
-      <object-line type="string">OBJECT_SHARED Models/fgfsdb/SkiJump.xml -122.37729558 37.60953765 0.6485 156.0</object-line>
+      <object-line type="string">OBJECT_SHARED Models/Military/SkiJump.xml -122.37729558 37.60953765 0.6485 156.0</object-line>
     </model>
     <model n="2">
       <legend type="string"></legend>
