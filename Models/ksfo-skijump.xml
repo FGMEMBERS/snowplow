@@ -11,7 +11,7 @@
       <latitude-deg type="double">37.60899351</latitude-deg>
       <longitude-deg type="double">-122.377669</longitude-deg>
       <elevation-ft type="double">1.980673085</elevation-ft>
-      <absolute-path type="string">/home/curt/Projects/FlightGear/data/Models/Military/SkiJump.xml</absolute-path>
+      <absolute-path type="string">/Models/Military/SkiJump.xml</absolute-path>
       <stg-path type="string">w130n30/w123n37/942050.stg</stg-path>
       <stg-heading-deg type="double">332</stg-heading-deg>
       <elevation-m type="double">0.6037091563</elevation-m>
@@ -26,7 +26,7 @@
       <latitude-deg type="double">37.60953765</latitude-deg>
       <longitude-deg type="double">-122.3772956</longitude-deg>
       <elevation-ft type="double">2.127562575</elevation-ft>
-      <absolute-path type="string">/home/curt/Projects/FlightGear/data/Models/Military/SkiJump.xml</absolute-path>
+      <absolute-path type="string">/Models/Military/SkiJump.xml</absolute-path>
       <stg-path type="string">w130n30/w123n37/942050.stg</stg-path>
       <stg-heading-deg type="double">156</stg-heading-deg>
       <elevation-m type="double">0.6484810729</elevation-m>
@@ -41,7 +41,7 @@
       <latitude-deg type="double">37.60929196</latitude-deg>
       <longitude-deg type="double">-122.3775207</longitude-deg>
       <elevation-ft type="double">12.41802691</elevation-ft>
-      <absolute-path type="string">/home/curt/Projects/FlightGear/data/AI/Aircraft/737/737-AmericaWestAirlines.xml</absolute-path>
+      <absolute-path type="string">/AI/Aircraft/737/737-AmericaWestAirlines.xml</absolute-path>
       <stg-path type="string">w130n30/w123n37/942050.stg</stg-path>
       <stg-heading-deg type="double">60</stg-heading-deg>
       <elevation-m type="double">3.785014602</elevation-m>
