@@ -12,6 +12,14 @@
   <flight-model>yasim</flight-model>
   <aero>snowplow-yasim</aero>
 
+  <tags>
+    <tag>groundvehicle</tag>    
+    <tag>1980s</tag>
+    <tag>1990s</tag>
+    <tag>2000s</tag>
+    <tag>2010s</tag>
+    <tag>diesel</tag>
+  </tags>
 
   <virtual-cockpit archive="y">true</virtual-cockpit>
   <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
